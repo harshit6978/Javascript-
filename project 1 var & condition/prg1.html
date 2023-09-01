@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="harshit">
+    <input type="submit" onclick="math()">
+
+    <h1 id="h1"></h1>
+
+    <script>
+        function math(){
+
+            var r=parseInt(document.getElementById('harshit').value);
+            var c;
+
+            c= 3.14 * r * r;
+
+            document.getElementById('h1').innerHTML="area of circle is a:"+ c;
+
+        }
+    </script>
+</body>
+</html>

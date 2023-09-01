@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <center>
+        <fieldset style="width: 30%;">
+        <legend><h1>Student Report Card</h1></legend></fieldset>
+
+
+
+        <table>
+            <tr>
+                <td>
+                    <label for="">Name:<label id="myname"></label></label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">Total:<label id="Total"></label></label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">Percentage:<label id="per"></label></label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">Grade:<label id="grade"></label></label>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><button>Dawnload</button></td>
+            </tr>
+        </table>
+    </center>
+    <script>
+
+        var name = "harshit lathiya";
+        var math= 89;
+        var phy = 90;
+        var chem= 66;
+        var bio= 78;
+        var eng= 94;
+        var total = math + phy + chem + bio + eng;
+        var Percentage = Math.floor((total / 500 * 100));
+        var grade ="";
+
+        if(Percentage< 50){
+            grade="d";
+
+        }
+        else if(Percentage>50 && Percentage<60){
+            grade="c";
+        }
+        else if(Percentage>60 && Percentage<70){
+            grade="b";
+        }
+        else if(Percentage>70 && Percentage<80){
+            grade="a";
+        }
+        else if(Percentage>80 && Percentage<100){
+            grade="a++";
+        }
+
+        document.write("<center><h1>student report card</h1>" + 
+            
+            "<table>" +
+                "<tr>" +
+                    "<td>"+
+                        "<lable>Name: </lable>"+name+
+                        "</td>"+
+                        "</tr>"+
+                        "<tr>"+
+                            "<td>"+
+                                "<label> Total Marks : </lable>"+total+
+                                    "</td>"+
+                                    "</tr>"+
+                                    "<tr>"+
+                                        "<td>"+
+                                            "<label> percentage :</label>"+Percentage+"%"+
+                                            "</td>"+
+                                            "</tr>"+
+                                            "<tr>"+
+                                                "<td>"+
+                                                    "<lable> grade: </lable>"+grade+
+                                                    "</td>"+
+                                                    "</tr>"+
+                                                    "</table>"+
+                                                    "</center>"
+
+                                    );
+    </script>
+</body>
+</html>

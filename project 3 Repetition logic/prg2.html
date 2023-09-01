@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program 2</title>
+</head>
+<body>
+    <input type="text"  id="qua" placeholder="Enter a number">
+    <input type="submit" onclick="math()">
+    <h1 id="ans"></h1> 
+    <script>
+        
+        function math() {
+        
+            let sum = 0;
+            // let n=parseInt(prompt("enter a number"));
+            var n=parseInt(document.getElementById('qua').value)
+            for (let i = 1; i <= n; i++) {
+              sum =sum * n;
+            }
+            document.getElementById('ans').innerHTML="number of sum is "+sum;
+        }
+        
+
+      </script>
+      
+      
+</body>
+</html>
