@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Basic claculator</h1>
+
+    <div class="form">
+        <form name="form1">
+            <input type="text" id="cals" name="result"/>
+
+            <div class="firstrow">
+                <input type="button" id="var" value="1" onkeypress="form1.result.value+='1'"/>
+                <input type="button" id="var" value="2" onclick="form1.result.value+='2'"/>
+                <input type="button" id="var" value="3" onclick="form1.result.value+='3'"/>
+                <input type="button" id="var" value="+" onclick="form1.result.value+='+'"/>
+            </div>
+
+            <div class="secondrow">
+                <input type="button" id="var" value="5" onclick="form1.result.value+='5'"/>
+                <input type="button" id="var" value="6" onclick="form1.result.value+='6'"/>
+                <input type="button" id="var" value="4" onclick="form1.result.value+='4'"/>
+                <input type="button" id="var" value="-" onclick="form1.result.value+='-'"/>
+            </div>
+
+            <div class="thirdrow">
+                <input type="button" id="var" value="7" onclick="form1.result.value+='7'"/>
+                <input type="button" id="var" value="8" onclick="form1.result.value+='8'"/>
+                <input type="button" id="var" value="9" onclick="form1.result.value+='9'"/>
+                <input type="button" id="var" value="*" onclick="form1.result.value+='*'"/>
+            </div>
+
+            <div class="fourrow">
+                <input type="button" id="var" value="0" onclick="form1.result.value+='0'"/>
+                <input type="button" id="var" value="." onclick="form1.result.value+='.'"/>
+                <input type="button" id="var" value="/" onclick="form1.result.value+='/'"/>
+                <input type="button" id="var" value="=" onclick="form1.result.value=eval(form1.result.value
+                )"/>
+            </div>
+
+            <input type="button" id="var" value="AC" onclick="form1.result.value+=' '"/>
+        </form>
+    </div>
+</body>
+</html>
