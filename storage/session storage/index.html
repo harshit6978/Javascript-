@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>session storage</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let data={
+        name:'harshit lathiya',
+        age:19,
+        fathername:'pankajbhai',
+        dob:'27 april 2004',
+
+    }
+
+    sessionStorage.setItem('user',JSON.stringify(data));
+
+    
+    let getData = (sessionStorage.getItem('user'))
+     console.log(getData);
+</script>
+</html>
