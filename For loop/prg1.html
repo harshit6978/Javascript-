@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    //  loop 1
+    let data = [78, 45, 878, 54, 87];
+    let res = data.length;
+
+    for (let i = 0; i < res; i++) {
+        if (data[i] > 50) {
+            console.log('out of 50', data[i]);
+        } else {
+
+            console.log('under 50', data[i]);
+        }
+    };
+
+    //  lop 2
+    let age = ['harshit', 'harsh', 'jal', 'harshit'];
+    // let name=age; 
+    for (let i = 0; i < 4; i++) {
+        if (age[i] == 'harshit') {
+            console.log('hello harshit');
+        } else {
+            console.log("not found");
+        }
+    }
+
+    // loop 3
+    let user = [{
+        name: 'ghars',
+    },
+    {
+        name: 'sachin'
+    },
+    {
+        name: 'rahul'
+    },
+    {
+        name: "kumar"
+    }];
+
+    for(let i=0;i<3;i++){
+        if(user){
+            console.log('all data',user);
+        }else{
+            console.log('no match');
+        }
+    } 
+
+    
+
+
+
+</script>
+
+</html>
