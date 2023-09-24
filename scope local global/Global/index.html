@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local function</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    // function 1
+
+    function fun1() {
+        let name = "Im harshit lathiya"
+        console.log(name);
+    }
+    fun1();
+
+    // function 2
+    function fun2() {
+        let a = 7;
+        let b = 8;
+        let c = a + b;
+        console.log("sum of two numbers is " + c)
+    }
+    fun2();
+
+
+    // function 3
+    function fun3(a, b) {
+        c = a * b;
+        console.log(c);
+    }
+    fun3(45, 15);
+
+    // function 4
+    function fun4() {
+        let user = "How are you?";
+        console.log(user);
+    }
+    fun4();
+
+    // function 5
+    function fun5() {
+        let married = false;
+        console.log(`you ${married ? "are" : "not"} married`);
+    }
+    fun5();
+
+
+    // function 6
+    function fun6() {
+        let a = 45;
+        let b = 55;
+        let c = a / b;
+        console.log(c);
+    }
+    fun6();
+
+    // function 7
+    function fun7(a, b, c) {
+        let ans = a * b - c;
+        console.log(ans);
+    }
+    fun7(90, 52, 61);
+
+    // function 8
+    function fun8() {
+        let x = prompt('enter the number');
+        if (x % 2 == 0) {
+            console.log(`${x} is even`)
+        }
+        else {
+            console.log(`${x} is odd `)
+        }
+    }
+    fun8();
+
+    // function 9
+    function fun9() {
+        let name = prompt("Enter your Name");
+        let age = parseInt(prompt("Enter Your Age"));
+        let gender = confirm("Are You Male or Female?");
+
+        if ((age >= 18 && gender == true) || gender == "male") {
+            console.log(`${name},You Are Eligible To Vote!`);
+        }
+        else {
+            console.log(`${name},Sorry You Cannot Vote`)
+        }
+    };
+    fun9();
+
+    // function 10
+    function fun10(){
+        const name="hello";
+        console.log(name);
+    }
+    fun10();
+
+
+</script>
+
+</html>
