@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    // map 1
+    let lastname = [{
+        name: 'harshit lathiya',
+        age: 23,
+        mobileno: 7854987548,
+    },
+    {
+        name: 'jay babriya',
+        age: 25,
+        mobileno: 7865987548,
+    },
+    {
+        name: 'ishan babriya',
+        age: 15,
+        mobileno: 9865987548,
+    }]
+
+    function name(lastname) {
+        let user = lastname.map(h => h.name);
+        return user
+    }
+
+    let full = name(lastname)
+    console.log('name is a', full);
+
+
+    // map 2
+    let student = [{
+        id: 's1',
+        firstname: "Harshit",
+        lastname: "Lathiyaraman",
+        subjects: ["Maths", "Science", "English", "Hindi"]
+    },
+    {
+        id: 's2',
+        firstname: "Jay",
+        lastname: "Babriyaraman",
+        subjects: ["Physics", "Chemistry", "Biology"]
+    },]
+
+    function subject(student) {
+        let data = student.map(c => c.id);
+        return data
+    }
+    let subjct = subject(student)
+    console.log("Id is a:", subjct);
+
+
+    // map 3
+    let car = [{
+        brand: "Ford",
+        model: "Mustang",
+        year: 1964,
+        color: "red",
+    },
+    {
+        brand: 'BMW',
+        model: 'M3',
+        year: 1990,
+        color: "blue"
+    },
+    {
+        brand: 'Audi',
+        model: "A4",
+        year: 2018,
+        color: "black"
+    },]
+
+    function Car(car) {
+        let Carmodel = car.map(c => c.model);
+        return Carmodel;
+    }
+    let map3 = Car(car);
+    console.log('Car Model:', map3);
+
+
+    // map 4
+    let people = [{
+        firstName: 'John',
+        lastName: "duvbe",
+        age: 67
+    },
+    {
+        firstName: 'Anna',
+        lastName: "Smith",
+    },
+    {
+        firstName: 'Petar',
+        lastName: "najid"
+    },
+        // {
+        //     firstName: 'jaylo',
+        //     lastName: 'kumar',
+        // },
+    ];
+
+    function fname(people) {
+        let fname = people.map(s => s.firstName);
+        return fname;
+    }
+    let lname = fname(people);
+    console.log("Last Name:", lname);
+
+    // map 5
+    let watch = [{
+        id: 67,
+        weight: 10,
+        brand: 'rolex',
+    },
+    {
+        id: 98,
+        weight: 12,
+        brand: 'nike'
+    },
+    {
+        id: 123,
+        weight: 15,
+        brand: "adidas"
+    },
+    {
+        id: 156,
+        weight: 18,
+        brand: "reebok"
+    },];
+
+    function fathion(watch) {
+        let nike = watch.map(n => n.weight);
+        return nike;
+    }
+    let watches = fathion(watch);
+    console.log('watches:', watches);
+
+
+    // map 6
+    let bike = [{
+        id: 1,
+        brand: 'honda',
+    },
+    {
+        id: 2,
+        brand: "yamaha",
+    },
+    {
+        id: 3,
+        brand: "suzuki",
+    },
+    {
+        id: 4,
+        brand: "ducati",
+    },
+    {
+        id: 5,
+        brand: "kawasaki",
+    },];
+
+    function map4(bike) {
+        let honda = bike.map(b => b.brand);
+        return honda;
+    }
+    let suzu = map4(bike);
+    console.log("suzu:", suzu);
+
+
+
+    // map 7
+    let house = [{
+        id: 0,
+        name: 'birla group',
+        rent: 4000,
+        day: 'night',
+    },
+    {
+        id: 1,
+        name: 'royal park',
+        rent: 8000,
+        day: "morning"
+    },
+    {
+        id: 2,
+        name: 'one8',
+        rent: 9000,
+        day: "evening",
+    },]
+
+    function home() {
+        let housename = house.map(o => o.rent);
+        return housename;
+    }
+    console.log('home:', home());
+
+
+    // map 8
+    let laptop = [{
+        id: 'a',
+        name: 'acer',
+        price: 48000,
+        gen: 'i7',
+    },
+    {
+        id: 'b',
+        name: "apple",
+        price: 36000,
+        gen: "m1"
+    },
+    {
+        id: "c",
+        name: "dell",
+        price: 50000,
+        gen: "xps-15"
+    },];
+
+    function lep() {
+        let lapname = laptop.map(l => l.gen);
+        return lapname;
+    }
+    console.log("lep:", lep())
+
+
+
+    // map 9
+    let song = [{
+        sname: 'chaleya',
+        singer: 'arjit singh',
+        movie: "jawan",
+    },
+    {
+        sname: 'avenger ',
+        singer: 'sachin',
+        movie: "avengers endgame",
+
+    },];
+
+    function sung() {
+        let sname = song.map(d => d.singer);
+        return sname;
+    }
+    console.log("singer:", sung());
+
+
+    // map 10
+    let mobile = [{
+        id: "a",
+        brand: 'iphone',
+        price: 20000,
+        ram: '8gb'
+    },
+    {
+        id: "b",
+        brand: 'oppo',
+        price: 40000,
+        ram: '12 gb',
+    },]
+
+    function mob(){
+        let mobil=mobile.map(m=>m.ram);
+        return mobil;
+    }
+    console.log('ram :',mob())
+
+
+
+
+
+
+</script>
+
+</html>
