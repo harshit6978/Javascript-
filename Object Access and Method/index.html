@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+        <script>
+            let name={
+                name:'harshit lathiya',
+                age:23,
+                fathername:'pankajbhai',
+                bankac:'sarasvat',
+                mobileno:7865489857,
+                address:'surat',
+            }
+            console.log(name.age);
+
+            // ?? it is a nullish coalescing
+
+            console.log(name.mobilen ?? ' please enter valid detail');
+
+
+            let array=[{
+                compony:'hp',
+                location:'delhi',
+                price:458700,
+                model:'victus',
+                ram:'8GB',
+                rom:'1TB'
+            },
+            {
+                compony:'dell',
+                location:'mumbai',
+                price: 85700 ,
+                model :'inspiron',
+                ram:'4GB', 
+                rom:'1TB'
+
+            }
+        ]
+
+        console.log(array[1] ?? 'data not correct');
+        </script>
+</html>
