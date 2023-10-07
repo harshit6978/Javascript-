@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    //-----------------------------------
+    let array = [1, 2, 3, 4, 5, 6];
+    let out = array
+        // 3,4,5,6,7,8
+        .map(x => x + 2)
+        .reduce((total, x) => total + x, 0);
+    console.log(out);
+
+
+    // fun 2 --------------------------------
+    let arr2 = [10, 20, 30, 40, 50, 60, 70, 80];
+    let sum = arr2
+
+        .map(a => a * 2)
+        .reduce((mul, a) => mul * a, 1);
+    console.log("mul", sum);
+
+
+    // fun 3 -----------------------------------
+    let arr3 = [25, 4, 25, 87, 4, 59];
+
+    let add = arr3
+        .map(b => b)
+        .reduce((add, b) => {
+            add / b;
+            return add / b
+        }, 1)
+    console.log('add', add);
+
+    // fun 4-------------------------------------
+    let arr4 = [11, 22, 33, 44, 55, 66, 77];
+    let max = arr4
+
+        .map(c => c - 2)
+        .reduce((sub, c) => {
+            sub * c;
+            return sub * c;
+        }, 2);
+    console.log('max ', max);
+
+    // fun 5----------------------------------
+    let arr5 = [100, 101, 102, 103, 104];
+    let min = arr5
+        .map(d => d)
+        .reduce((min, d) => min + d, 0);
+    console.log("min ", min)
+
+    // fun 6---------------------------------
+    let arr6 = [-1, -2, -3, -4, -5];
+    let pos = arr6
+        .map(e => e)
+        .reduce((pos, d) => pos + d, 0);
+    console.log("positive numbers only: ", pos);
+
+    // fun 7----------------------------------
+    let arr7 = [2, 4, 6, 8, 10, 12, 14];
+    let fun7 = arr7
+        .map(f => f * 2)
+        .reduce((pul, f) => pul * f, 2);
+    console.log("fun7", fun7);
+
+
+    // fun 8----------------------------------
+
+    let arr8 = [5,10,15,20,25];
+    let str = arr8
+    .map(g=>g )
+    .reduce ((accumulator , currentValue )=> accumulator+currentValue,0);
+    console.log ('str',str );
+
+    // fun 9----------------------------------
+    let arr9=[1,-2,3,-4] ;
+    let sums=arr9
+    // .map(h=>h)
+    .reduce((sums,h)=> sums+h,0);
+    console.log ("sum of all the elements in array is : " ,sums);
+
+
+    // fun 10---------------------------------
+    let arr10=[10,5,-78,2,-20];
+    let product=arr10
+    .reduce((pro,j)=>{
+        let total=pro-j;
+        return total;
+    },0)
+    console.log (product);
+
+
+
+
+
+
+</script>
+
+</html>
