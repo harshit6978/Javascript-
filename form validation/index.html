@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Registration form</h1>
+
+
+    <input id="name" type="text" placeholder="Enter Your full Name">
+    <input id="address" type="text" placeholder="Enter Your Address">
+    <input id="age" type="number" placeholder="Enter Your Age">
+    <input type="text" name="job" id="job" placeholder="Enter a job">
+    <input type="number" name="mobile no" id="mobno" placeholder="Enter a mobile no">
+    <input type="text" name="contry" id="contry" placeholder="Enter a contry">
+    <button type="submit" onclick="hello()">Publish</button>
+    <!-- <p id="error" style="color: red;"></p> -->
+
+    <hr />
+    <p>User Information</p>
+    <button onclick="getUserInfo()">Form Data</button>
+    <p id="data_name"></p>
+    <p id="data_address"></p>
+    <p id="data_age"></p>
+    <p id="data_job"></p>
+    <p id="data_mobile"></p>
+    <p id="data_contry"></p>
+
+
+</body>
+<script>
+
+
+    function hello() {
+        let name = document.getElementById('name').value;
+        let address = document.getElementById('address').value;
+        let age = document.getElementById('age').value;
+        let job = document.getElementById('job').value;
+        let mobno = document.getElementById("mobno").value;
+        let country = document.getElementById("contry").value;
+
+        try {
+            if (name && address && age && job && mobno && country) {
+                alert('form will be submited');
+                // document.getElementById('test_name').innerHTML=name;
+                let store = {
+                    name,
+                    address,
+                    age,
+                    job,
+                    mobno,
+                    country
+                }
+                localStorage.setItem('form', JSON.stringify(store));
+            } else {
+                throw Error('please enter a information')
+            }
+        } catch (error) {
+            alert(error)
+        }
+    }
+
+    function getUserInfo() {
+        let store = JSON.parse(localStorage.getItem('form'))
+        document.getElementById('data_name').innerHTML = store.name ?? 'Something went to wrong'
+        document.getElementById('data_age').innerHTML = store.age ?? 'Something went to wrong'
+        document.getElementById('data_address').innerHTML = store.address
+        document.getElementById('data_job').innerHTML = store.mobno
+        document.getElementById('data_mobile').innerHTML = store.job
+        document.getElementById('data_contry').innerHTML = store.country
+    }
+</script>
+
+</html>
