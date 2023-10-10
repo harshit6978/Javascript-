@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+
+<body>
+    <h1>School Result</h1>
+    <hr>
+    <input type="number" name="number" id="input" placeholder="enter a marks">
+
+    <button onclick="marks()">click</button>
+    <p id="ans"></p>
+</body>
+<script>
+    function marks() {
+        // Get the student's score from the user
+        const Marks = document.getElementById('input').value;
+
+        // Initialize a variable 
+        let result;
+
+        // Use a switch statement 
+        switch (true) {
+            case Marks >= 90 && Marks<=100:
+                result = 'A+';
+                break;
+            case Marks >= 80 && Marks<=90:
+                result = 'A';
+                break;
+            case Marks >= 70 && Marks<=80:
+                result = 'B+';
+                break;
+            case Marks >= 60 && Marks<=70:
+                result = 'B';
+                break;
+            case Marks >= 50 && Marks<=60:
+                result = 'C+';
+                break;
+            case Marks >= 33 && Marks<=50:
+                result = 'C'
+                break;
+            default:
+                result = 'fail';
+                break;
+        }
+
+        // Display the result
+        console.log(`Student's Grade: ${result}`);
+        document.getElementById('ans').innerHTML = `Student's Grade: ${result} `;
+    }
+</script>
+
+</html>
