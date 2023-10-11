@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // push method and pop method-----------------------------------------
+    var fruits = ['Banana', 'Orange'];
+    fruits.push('kiwi', 'apple', 'watermellon');
+    console.log(fruits, 'fruits');
+
+    // pop method
+    fruits.pop();
+    console.log(fruits);
+
+    // 2 example
+    const arr = [1, 2, 3, 4];
+    arr.push(5, 6);
+    console.log(arr);
+
+    // pop method
+    arr.pop();
+    console.log(arr);
+
+    // shift and unshift method--------------------------------------------
+    var car = ["lemborghini", "BMW", "Audi"];
+    car.unshift("Toyota");
+    console.log(car, "car")
+
+    // shift method
+    car.shift();
+    console.log(car)
+
+    // 2 example
+    let nums = [1, 2, 3, 4]
+    nums.unshift(-1, -2)
+    console.log(nums, "nums")
+    // shift method
+    nums.shift()
+    console.log(nums, 'nums')
+
+    // slice and splice method----------------------------------------------
+    let bike = ["suzuki", "kawasaki", "bmw", "audi"];
+    bike.splice(1, 2, "ducati");
+    console.log(bike, "bike")
+
+    //slice
+    console.log(bike.slice(0, 2))
+</script>
+
+</html>
