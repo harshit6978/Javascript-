@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>
+            Trip Cost Calculator
+        </h1>
+        <div>
+            <form>
+                Distance (km): <input id='distance' type=number class="form-control"> <br />
+                Petrol Price (cents per litre):<input id='cost_per_litre' type=number class="form-control"><br>
+
+                Litres per 100 km:<input id='litres_per_100km' type=number class="form-control"><br>
+
+                Trip Cost<input id='output' class="form-control" type="text" readonly><br>
+                <input type=submit onclick='calculate_cost()' class="btn btn-default btn-submit form-control">
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    var distance = document.getElementById('distance');
+    var litresper100km = document.getElementById('litres_per_100km')
+    var output = document.getElementById('output')
+    function calculate_Cost() {
+        var costPerLitre = Number(litresper100km.value) / 100;
+        var totalcost = ((Number(distance.value)) * costPerLitre).toFixed();
+        console.log("Total Cost: " + totalcost);
+        alert(`Total Cost is ${totalcost}`);
+        output.value = `${totalcost}`;
+    }
+
+
+</script>
+
+</html>
