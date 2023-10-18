@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            border-radius: 50%;
+            justify-content: center;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="online()">Check online</button>
+    <div id="box"></div>
+    <h1 id="user"></h1>
+</body>
+<script>
+    // console.log(navigator.onLine);
+
+    function online() {
+        if (navigator.onLine) {
+            document.getElementById('box').style.background = 'green';
+            document.getElementById('user').innerHTML = 'User is online';
+        } else {
+            document.getElementById('box').style.backgroundColor = 'red';
+            document.getElementById('user').innerHTML = 'User is Offline';
+        }
+    } 
+
+</script>
+
+</html>

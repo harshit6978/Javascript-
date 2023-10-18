@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>Event name</label>
+    <input type="text" placeholder="Enter a Event name" id="name"><br>
+    <label>Event member</label>
+    <input type="text" id="member" placeholder="Enter a Event member"><br>
+    <label>Dish price</label>
+    <input type="text" id="price" placeholder="Enter a Dish price"><br>
+    <label>Advance</label>
+    <input type="text" id="advance" placeholder="Enter a advance payment"><br>
+    <label>Discount</label>
+    <input type="text" id="Discount" placeholder="Enter a Discount"><br>
+    <button onclick="myFunction()">Submit</button>
+</body>
+<script>
+    function myFunction() {
+        var event_name = document.getElementById("name").value;
+        var event_member = document.getElementById("member").value;
+        var dishPrice = parseInt(document.getElementById('price').value);
+        var advance = parseInt(document.getElementById('advance').value);
+        var discount =document.getElementById('Discount').value ;
+       
+        var totalCost = ((dishPrice * event_member) - advance);
+        var dis=(totalCost / 100 )* discount 
+        var finalTotal =(totalCost)-dis
+        alert(`The Total Cost is ${finalTotal}`);
+    }            
+</script>
+
+</html>
